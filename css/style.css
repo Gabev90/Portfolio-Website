@@ -1,0 +1,126 @@
+*,*:after,*:before{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Montserrat", sans-serif;;
+    font-size: 16px;
+    margin: 0;
+    background: #fff;
+    min-height: 100vh;
+    background: #000;
+    position: relative;
+}
+img{
+    max-width: 100%;
+}
+
+.section{
+    padding: 20px;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    color:#fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+}
+.section.cl1{
+    background: #1abc9c;
+    position: static;
+}
+.section.cl2{
+    background: #2ecc71;
+}
+.section.cl3{
+    background: #3498db;
+}
+.section.cl4{
+    background: #9b59b6;
+}
+.section.cl5{
+    background: #f1c40f;
+}
+.section.cl6{
+    background: #e67e22;
+}
+h1,h2{
+    font-size: 46px;
+    margin-bottom: 30px;
+}
+header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 20px 0;
+    z-index: 10;
+    backdrop-filter: blur(30px);
+}
+.container{
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+}
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    font-size: 60px;
+    color:#fff;
+    text-decoration: none;
+    font-weight: 900;
+}
+.main-nav{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.main-nav li{
+    display: inline-block;
+    margin-left: 20px;
+}
+.main-nav li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+.portfolio_box{
+    border: 2px solid;
+}
+input:not([type="submit"]),
+textarea{
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    outline: 0;
+}
+textarea{
+    height: 90px;
+}
+input[type="submit"]{
+    background:black;
+    padding: 10px;
+    color:#fff;
+    text-transform: uppercase;
+    border: 0;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    opacity:0.7;
+}
+#scroll_section{
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+}
